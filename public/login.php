@@ -29,7 +29,7 @@ function login($username, $password, $conn) {
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['username'] = $row['username'];
             // Redirect to welcome.php
-            header("Location: welcome.php");
+            header("Location: product.php");
             exit();
         } else {
             echo "Invalid password.\n";
